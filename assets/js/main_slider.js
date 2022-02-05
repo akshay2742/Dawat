@@ -78,3 +78,20 @@ window.onscroll = () => {
         upperNav.style.display = 'block';
     }
 };
+
+$(window).resize(function(){
+    if(window.innerWidth < 640){
+      $('.navigation_bar .container').addClass('.navigation_bar .container-fluid').removeClass('.navigation_bar .container');
+    }else{
+      $('.navigation_bar .container-fluid').addClass('.navigation_bar .container').removeClass('.navigation_bar .container-fluid');
+    }
+  });
+
+  function myfunction() {
+    var x = document.getElementById("mobile_links");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

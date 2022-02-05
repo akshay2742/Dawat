@@ -8,6 +8,16 @@ html, body{
 a{
     text-decoration: none;
 }
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+.icon{
+    display: none;
+}
+#mobile_links {
+    display: none;
+}
 #main_page{
     display: flex;
     flex-direction: column;
@@ -421,11 +431,79 @@ a{
 }
 
 @media screen and (max-width: 640px){
+    .navigation_content{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        background-color: #111;
+    }
+    .icon {
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .icon .fa {
+        color: rgb(114, 109, 109);
+        font-size: 30px;
+    }
    .email{
-        display: none;
+        display: none !important;
    }
     .phone{
-          display: none;
+          display: none !important;
     }
+    .navbar_links{
+        display: none !important;
+    }
+
+    .slider_content h2{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Dancing Script', cursive;
+        color: #fff;
+        animation: fadeInDown;
+        animation-duration: 1s;
+        --animate-duration: 2s;
+    }
+    .slider_content p{
+        text-align: center;
+        font-family: 'PT Sans Narrow', sans-serif;
+        color: #fff;
+        font-size: 40px;
+        animation: zoomIn 1s;
+        --animate-duration: 2s;
+    }
+    
+    
+    .slider_content button{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+        margin: 0 auto;
+        width: 65%;
+        height: 40px;
+        border: #fff solid 1px;
+        animation: slideInUp 1s;
+        --animate-duration: 2s;
+        background: transparent none repeat scroll 0 0;
+    }
+    .mobile_list{
+        color: #fff;
+        padding-top: 20px;
+    }
+    .mobile_list a{
+        color: #fff;
+        padding-top: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+    #mobile_links {
+        display: none;
+        height: 240px;
+        background-color: #111;
+        transition: .5s;
+    }
+    
 }
     
