@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 html, body{
     height: 100%;
     margin: 0;
@@ -66,7 +69,7 @@ a{
     top: 0;
     width: 100%;
 }
-/* #slide3{
+#slide3{
     background: url(../../assets/images/slide_3.jpg) 0px 0px / cover no-repeat scroll;
     animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
@@ -83,31 +86,31 @@ a{
     position: absolute;
     top: 0;
     width: 100%;
-} */
+}
 @keyframes fadeIn {
+    0% {opacity:0.7;}
+    100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn {
     0% {opacity:0.5;}
     100% {opacity:1;}
-  }
+}
   
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
+@-webkit-keyframes fadeIn {
+    0% {opacity:0.5;}
     100% {opacity:1;}
-  }
+}
   
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
+@-o-keyframes fadeIn {
+    0% {opacity:0.5;}
     100% {opacity:1;}
-  }
+}
   
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
+@-ms-keyframes fadeIn {
+    0% {opacity:0.5;}
     100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+}
 .navigation_bar{
     position: absolute;
     display: flex;
@@ -127,7 +130,9 @@ a{
     height: 100%;
 }
 .upper_nav_contact{
+    font-family: 'Lato', sans-serif;
     color: #fff;
+    font-weight: 600;
     font-size: 15px;
     margin-top: auto;
     margin-bottom: auto;
@@ -166,6 +171,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     font-weight: 700;
+    font-family: 'Lato', sans-serif;
 }
 .icons{
     color: #fff;
@@ -242,23 +248,23 @@ a{
 .navbar_link_about{
     width: 100%;
 }
-.navbar_link_about p{
+.navbar_link_about a p{
     text-decoration: none;
-    color: #000;
     position: relative;
     top: 40%;
     text-align: center;
     font-weight: 700;
     color: #fff;
+    font-family: 'Lato', sans-serif;
 }
-.navbar_link p{
+.navbar_link a p{
     text-decoration: none;
-    color: #000;
     position: relative;
     top: 40%;
     text-align: center;
     font-weight: 700;  
-    color: #fff; 
+    color: #fff;
+    font-family: 'Lato', sans-serif; 
 }
 .navbar_links div:hover:nth-child(1){
     border-top: #ca3d26 solid 1px;
@@ -345,15 +351,12 @@ a{
     margin-bottom: auto;
     margin-right: auto;
     z-index: 1;
-   
 }
 .chevron_right{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     z-index: 1;
-    border: 0 none;
-    background: transparent none repeat scroll 0 0;
 }
 .chevron_right button{
     background: transparent none repeat scroll 0 0;
@@ -371,3 +374,58 @@ a{
     color: whitesmoke;
     
 }
+
+.slider_content{
+    display:flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.slider_content h2{
+    text-align: center;
+    font-size: 82px;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+.slider_content p{
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+    font-size: 82px;
+    animation: zoomIn 1s;
+}
+
+
+.slider_content button{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 35%;
+    height: 40px;
+    border: #fff solid 1px;
+    animation: slideInUp 1s;
+    background: transparent none repeat scroll 0 0;
+}
+.slider_content button:hover{
+    border: none;
+    background: #ca3d26;
+    transition: .5s;
+    font-stretch: expanded;
+}
+
+@media screen and (max-width: 640px){
+   .email{
+        display: none;
+   }
+    .phone{
+          display: none;
+    }
+}
+    
