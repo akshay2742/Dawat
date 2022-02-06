@@ -1,0 +1,40 @@
+#latest_news{
+    padding: 50px 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0) url("../images/parallax_3.jpg") no-repeat scroll center center / cover;
+}
+#latest_news::after{
+    background: #000 url(../images/icon/pattarn.png);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.news_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.news_heading{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.news_heading p{
+    color: #ca3d26;
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+}
+.news_heading div{
+    justify-content: center;
+    margin : 0 auto;
+    height: 70px;
+}

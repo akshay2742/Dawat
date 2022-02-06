@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="./assets/css/special_features.css">
         <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="./assets/css/menu.css">
+        <link rel="stylesheet" href="./assets/css/chef.css">
+        <link rel="stylesheet" href="./assets/css/news.css">
         <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
         <link rel="stylesheet" href="./assets/FontAwesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -402,6 +404,81 @@
                 </div>
             </div>
         </section>
+        <section id="book_table">
+            <div class="container book_table_content">
+                <h2>BOOK A TABLE !</h2>
+                <a>BOOK NOW</a>
+            </div>"
+        </section>
+        <section id="chefs">
+            <div class="container chef_content">
+                <div class="chef_heading">
+                    <p>Our Chef's</p>
+                    <div>
+                        <img class="red-separator" src="./assets/images/red seperator.png">
+                    </div>
+                </div>
+                <div class="row chef_slider">
+                    <div class=" team_slider owl-carousel owl-theme">
+                        <div class="chef col-md-3 col-lg-12 col-sm-12 col-xs-12 ">
+                            <div class="chef_image">
+                                <img src="./assets/images/team-1.jpg">
+                            </div>
+                            <div class="chef_card_content">
+                                <h3>Mark Angelila</h3>
+                                <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="chef col-md-3 col-lg-12 col-sm-12 col-xs-12 ">
+                            <div class="chef_image">
+                                <img src="./assets/images/team-2.jpg">
+                            </div>
+                            <div class="chef_card_content">
+                                <h3>Mark Angelila</h3>
+                                <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="chef col-md-3 col-lg-12 col-sm-12 col-xs-12 ">
+                            <div class="chef_image">
+                                <img src="./assets/images/team-3.jpg">
+                            </div>
+                            <div class="chef_card_content">
+                                <h3>Mark Angelila</h3>
+                                <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="chef col-md-3 col-lg-12 col-sm-12 col-xs-12 ">
+                            <div class="chef_image">
+                                <img src="./assets/images/team-4.jpg">
+                            </div>
+                            <div class="chef_card_content">
+                                <h3>Mark Angelila</h3>
+                                <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="chef col-md-3 col-lg-12 col-sm-12 col-xs-12 ">
+                            <div class="chef_image">
+                                <img src="./assets/images/team-5.jpg">
+                            </div>
+                            <div class="chef_card_content">
+                                <h3>Mark Angelila</h3>
+                                <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="latest_news">
+            <div class="container news_content">
+                <div class="news_heading">
+                    <p>Latest News</p>
+                    <div>
+                        <img class="red-separator" src="./assets/images/red seperator.png">
+                    </div>
+                </div>
+            </div>
+        </section>
         <script src="./assets/js/main_slider.js"></script>
         <script src="./assets/js/menu.js"></script>
         <script src="./assets/js/jquery.min.js"></script>
@@ -428,6 +505,36 @@
                     },
                     1000: {
                         items: 1
+                    }
+                }
+            });
+        </script>
+        <script type="text/javascript">
+            $('.team_slider').owlCarousel({
+                merge: true,
+                video: true,
+                items: 1,
+                smartSpeed: 1000,
+                loop: true,
+                nav: false,
+                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                autoplay: false,
+                autoplayTimeout: 2000,
+                margin: 15,
+                autoWidth: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    400: {
+                        items: 3
+                    },
+                    800: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
                     }
                 }
             });
