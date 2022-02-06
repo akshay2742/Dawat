@@ -69,23 +69,21 @@ setInterval(() => {
 
 let navbar = document.querySelector('.navigation_bar');
 let upperNav = document.querySelector('.upper_nav');
+let nav_logo = document.querySelector('.logo');
 window.onscroll = () => {
     if (window.scrollY > 300) {
         navbar.style.backgroundColor = '#fff';
         upperNav.style.display = 'none';
+        nav_logo.src='./assets/images/main_logo_black.png';
+
     } else {
         navbar.style.backgroundColor = 'transparent';
         upperNav.style.display = 'block';
+        nav_logo.src='./assets/images/main_logo.png';
     }
 };
 
-$(window).resize(function(){
-    if(window.innerWidth < 640){
-      $('.navigation_bar .container').addClass('.navigation_bar .container-fluid').removeClass('.navigation_bar .container');
-    }else{
-      $('.navigation_bar .container-fluid').addClass('.navigation_bar .container').removeClass('.navigation_bar .container-fluid');
-    }
-  });
+
 
   function myfunction() {
     var x = document.getElementById("mobile_links");
@@ -95,3 +93,6 @@ $(window).resize(function(){
         x.style.display = "block";
     }
 }
+
+
+

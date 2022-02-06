@@ -173,6 +173,7 @@ ul {
     width: 180px;
     background-color: #ca3d26;
 }
+
 .nav_button p{
     color: #fff;
     font-size: 15px;
@@ -482,7 +483,7 @@ ul {
         font-weight: 600;
         font-family: 'Lato', sans-serif;
         margin: 0 auto;
-        width: 65%;
+        width: 70%;
         height: 40px;
         border: #fff solid 1px;
         animation: slideInUp 1s;
@@ -505,6 +506,14 @@ ul {
         transition: .5s;
         z-index: 2;
     }
+    .social_media{
+        width: 100%;
+    }
+    .nav_button{
+        width: px;
+        background-color: #ca3d26;
+    }
+ 
     
 }
     

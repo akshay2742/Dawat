@@ -1,0 +1,112 @@
+#special_packages{
+    padding: 50px 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0) url("../images/parallax_1.jpg") no-repeat scroll center center / cover;
+}
+#special_packages::after{
+    background: #000 url(../images/icon/pattarn.png);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.package_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.package_heading{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.package_heading p{
+    color: #ca3d26;
+    font-size: 80px;
+    font-family: 'Dancing Script', cursive;
+}
+.package_heading div{
+    justify-content: center;
+    margin : 0 auto;
+    height: 70px;
+}
+.package_1{
+    display: flex;
+    flex-direction: row;
+}
+.package_image{
+    height: auto;
+    max-height: 450px;
+    width: 70%;
+}
+.package_details{
+    display:flex;
+    flex-direction: column;
+    background: #fff none repeat scroll 0 0;
+    color: #1a1a1a;
+    height: 300px;
+    margin-top: -150px;
+    max-height: 350px;
+    padding: 50px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 40%;
+    z-index: 9;  
+}
+
+.package_button {
+    border: 1px solid;
+    color: #ca3d26;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    padding: 7px 23px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.package_button:hover{
+    color: #fff;
+    background: #ca3d26;
+    border: none;
+    transition: .5s;
+}
+@media screen and (max-width: 640px){
+    .package_heading p{
+        color: #ca3d26;
+        font-size: 40px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .package_1{
+        display: flex;
+        flex-direction: column;
+    }
+    .package_image{
+        height: auto;
+        max-height: 450px;
+        width: 100%;
+    }
+    .package_details {
+        display: flex;
+        flex-direction: column;
+        background: #fff none repeat scroll 0 0;
+        color: #1a1a1a;
+        height: auto;
+        margin: 0;
+        padding: 25px;
+        position: inherit;
+        width: 100%;
+    }
+}
+    

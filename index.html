@@ -7,6 +7,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/our_story.css">
+        <link rel="stylesheet" href="./assets/css/special_features.css">
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
         <link rel="stylesheet" href="./assets/FontAwesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
@@ -82,20 +85,22 @@
                             </div>
                         </div>
                         <div class="social_media">
-                            <div class="social_icons">
-                                <i class="fa fa-facebook icons" aria-hidden="true"></i>
-                            </div>
-                            <div class="social_icons">
-                                <i class="fa fa-twitter icons" aria-hidden="true"></i>
-                            </div>
-                            <div class="social_icons">
-                                <i class="fa fa-dribbble icons" aria-hidden="true"></i>
-                            </div>
-                            <div class="social_icons">
-                                <i class="fa fa-behance icons" aria-hidden="true"></i>
-                            </div>
-                            <div class="social_icons">
-                                <i class="fa fa-feed icons" aria-hidden="true"></i>
+                            <div class="media">
+                                <div class="social_icons">
+                                    <i class="fa fa-facebook icons" aria-hidden="true"></i>
+                                </div>
+                                <div class="social_icons">
+                                    <i class="fa fa-twitter icons" aria-hidden="true"></i>
+                                </div>
+                                <div class="social_icons">
+                                    <i class="fa fa-dribbble icons" aria-hidden="true"></i>
+                                </div>
+                                <div class="social_icons">
+                                    <i class="fa fa-behance icons" aria-hidden="true"></i>
+                                </div>
+                                <div class="social_icons">
+                                    <i class="fa fa-feed icons" aria-hidden="true"></i>
+                                </div>
                             </div>
                             <div class="nav_button">
                                 <p>BOOK A TABLE</p>
@@ -105,7 +110,7 @@
                 </div>
                 <div class="container navigation_content">
                     <div class="navbar_logo">
-                        <a href="index.html"><img src="./assets/images/main_logo.png" alt="logo"></a>
+                        <a href="index.html"><img src="./assets/images/main_logo.png" class="logo" alt="logo"></a>
                     </div>
                     <div class="navbar_links">
                         <div class="navbar_link">
@@ -185,7 +190,78 @@
                 </div>
             </div>
         </section>
+        <section id="special_packages">
+            <div class="container package_content">
+                <div class="package_heading">
+                    <p>Special Packages</p>
+                    <div>
+                        <img class="red-separator" src="./assets/images/red seperator.png">
+                    </div>
+                    
+                </div>
+                <div class="owl-carousel owl-theme package_slider">
+                    <div class="package_1">
+                        <div class="package_image">
+                            <img src="./assets/images/promo_slide_1.jpg">
+                        </div>
+                        <div class="package_details" id="package_details">
+                            <h3>40% off for 9'' - 12'' pizza - Wed, Thu, Friday only</h3>
+                            <p>Pizza 12 inch + 1 Side Dish + 1,5L Coke Bottle Only From 209,000</p>
+                            <a href="#" class="package_button">Order now</a>
+                        </div>
+                    </div>
+                    <div class="package_2">
+                        <div class="package_image">
+                            <img src="./assets/images/promo_slide_2.jpg">
+                        </div>
+                        <div class="package_details" id="package_details">
+                            <h3>40% off for 9'' - 12'' pizza - Wed, Thu, Friday only</h3>
+                            <p>Pizza 12 inch + 1 Side Dish + 1,5L Coke Bottle Only From 209,000</p>
+                            <a href="#" class="package_button">Order now</a>
+                        </div>
+                    </div>
+                    <div class="package_3">
+                        <div class="package_image">
+                            <img src="./assets/images/promo_slide_3.jpg">
+                        </div>
+                        <div class="package_details" id="package_details">
+                            <h3>40% off for 9'' - 12'' pizza - Wed, Thu, Friday only</h3>
+                            <p>Pizza 12 inch + 1 Side Dish + 1,5L Coke Bottle Only From 209,000</p>
+                            <a href="#" class="package_button">Order now</a>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
         <script src="./assets/js/main_slider.js"></script>
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                merge: true,
+                video: true,
+                items: 1,
+                smartSpeed: 1000,
+                loop: true,
+                nav: false,
+                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                autoplay: false,
+                autoplayTimeout: 2000,
+                margin: 15,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
