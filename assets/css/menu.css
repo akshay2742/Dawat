@@ -1,0 +1,162 @@
+#menu{
+    padding: 80px 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+}
+#menu::after{
+    background: rgba(0, 0, 0, 0) url(../images/icon/triangle.png) repeat scroll 0 0;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    top: -7px;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    width: 100%;
+    z-index: 9;
+}
+.menu_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.menu_heading{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.menu_heading p{
+    color: #ca3d26;
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+}
+.menu_heading div{
+    justify-content: center;
+    margin : 0 auto;
+    height: 70px;
+}
+.menu_cards_filters{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.menu_cards_filters ul li{
+    border: 1px solid;
+    color: #1e1e1f;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 2px;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.menu_cards_filters ul li:hover{
+    background: #ca3d26;
+    color: #fff;
+}
+.food_menu{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu_details{
+    display: flex;
+    flex-direction: row;
+    border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
+}
+.menu_details div img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px 5px gray;
+
+}
+.food_content{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    position: relative;
+    left: 20px;
+}
+.food_content p{
+    font-size: 20px;
+    color: rgb(30, 30, 31);
+}
+.receipes{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+}
+.food_image{
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    margin-left: 10px;
+}
+.receipes p{
+    color: rgb(30, 30, 31);
+    font-size: 15px;
+    width: 100%;
+}
+.mobile_menu{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .menu_cards_filters ul li{
+        margin: 5px;
+    }
+    .menu{
+        display: none;
+    }
+    .mobile_menu{
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    .food_content{
+        display: flex;
+        flex-direction: column;  
+        width: 100%;
+    }
+    .food_content p{
+        font-size: 20px;
+        color: rgb(30, 30, 31);
+    }
+    .receipes{
+        display: flex;
+        flex-direction: row;
+        
+        width: 100%;
+    }
+    .food_image{
+        margin-top: auto;
+        margin-bottom: auto;
+        position: relative;
+    }
+    .receipes p{
+        color: rgb(30, 30, 31);
+        font-size: 15px;
+        width: 100%;
+    }
+    .menu_details{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+}
+    
