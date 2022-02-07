@@ -132,10 +132,10 @@
 #book_table{
     padding: 150px 0;
     position: relative;
-    background: rgba(0, 0, 0, 0) url("../images/parallax_2.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../images/promo_slide_2.jpg") no-repeat scroll center center / cover;
 }
 #book_table::after{
-    background: #000 url(../images/icon/pattarn.png);
+    background: #000 url(../images/icon/dots.png);
     content: "";
     height: 100%;
     left: 0;

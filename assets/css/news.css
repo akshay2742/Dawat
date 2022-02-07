@@ -1,10 +1,10 @@
 #latest_news{
     padding: 50px 0;
     position: relative;
-    background: rgba(0, 0, 0, 0) url("../images/parallax_3.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../images/slide_2.jpg") no-repeat scroll center center / cover;
 }
 #latest_news::after{
-    background: #000 url(../images/icon/pattarn.png);
+    background: #000 url(../images/icon/dots.png);
     content: "";
     height: 100%;
     left: 0;

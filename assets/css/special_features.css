@@ -1,10 +1,10 @@
 #special_packages{
     padding: 50px 0;
     position: relative;
-    background: rgba(0, 0, 0, 0) url("../images/parallax_1.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../images/promo_slide_3.jpg") no-repeat scroll center center / cover;
 }
 #special_packages::after{
-    background: #000 url(../images/icon/pattarn.png);
+    background: #000 url(../images/icon/dots.png);
     content: "";
     height: 100%;
     left: 0;

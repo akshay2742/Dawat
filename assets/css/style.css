@@ -51,7 +51,7 @@ ul {
 }
 
 #slide1::after {
-    background: #000 url(../images/icon/pattarn.png) repeat scroll 0 0;
+    background: #000 url(../images/icon/dots.png) repeat scroll 0 0;
     content: "";
     height: 100%;
     left: 0;
@@ -122,12 +122,28 @@ ul {
     100% {opacity:1;}
 }
 .navigation_bar{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 140px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    transition: .5s;
+}
+.navigation_bar{
+    --check_opacity: 0;
+}
+.navigation_bar::after{
+    background: rgba(0, 0, 0, 0) url(../images/icon/triangle.png) repeat scroll 0 0;
+    bottom: -7px;
+    content: "";
+    height: 7px;
+    left: 0;
+    opacity: var(--check_opacity,0);
+    position: absolute;
+    width: 100%;
+    transition: .5s;
 }
 .upper_nav{
     width: 100%;
@@ -494,7 +510,7 @@ ul {
         color: #fff;
         padding-top: 20px;
     }
-    .mobile_list a{
+    .navbar_link{
         color: #fff;
         padding-top: 20px;
         font-family: 'Lato', sans-serif;
@@ -502,9 +518,9 @@ ul {
     #mobile_links {
         display: none;
         height: 240px;
-        background-color: #111;
-        transition: .5s;
+        background-color: #000;
         z-index: 2;
+        transition: transform 1s ease-out;
     }
     .social_media{
         width: 100%;
