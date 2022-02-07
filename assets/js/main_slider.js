@@ -73,7 +73,9 @@ let nav_logo = document.querySelector('.logo');
 let link_color =document.querySelectorAll('.links');
 let mobileNav = document.querySelector('.navigation_content');
 let mobileLink = document.querySelectorAll('.navbar_link1');
-let mobileList = document.querySelector("#mobile_links")
+let mobileList = document.querySelector("#mobile_links");
+
+
 window.onscroll = () => {
     if (window.scrollY > 300) {
         navbar.style.backgroundColor = '#fff';
@@ -89,13 +91,16 @@ window.onscroll = () => {
         link_color[6].style.color = '#000';
         link_color[7].style.color = '#000';
         link_color[8].style.color = '#000';
-        mobileLink[0].style.color = '#000';
-        mobileLink[1].style.color = '#000';
-        mobileLink[2].style.color = '#000';
-        mobileLink[3].style.color = '#000';
-        mobileLink[4].style.color = '#000';
-        mobileNav.style.backgroundColor = '#fff';
-        mobileList.style.backgroundColor = '#fff';
+        if(screen.width < 640)
+        {
+            mobileLink[0].style.color = '#000';
+            mobileLink[1].style.color = '#000';
+            mobileLink[2].style.color = '#000';
+            mobileLink[3].style.color = '#000';
+            mobileLink[4].style.color = '#000';
+            mobileNav.style.backgroundColor = '#fff';
+            mobileList.style.backgroundColor = '#fff';
+        }
         navbar.style.setProperty("--check_opacity", "1");
 
     } else {
@@ -111,13 +116,16 @@ window.onscroll = () => {
         link_color[6].style.color = '#fff';
         link_color[7].style.color = '#fff';
         link_color[8].style.color = '#fff';
-        mobileLink[0].style.color = '#fff';
-        mobileLink[1].style.color = '#fff';
-        mobileLink[2].style.color = '#fff';
-        mobileLink[3].style.color = '#fff';
-        mobileLink[4].style.color = '#fff';
-        mobileNav.style.backgroundColor = '#000';
-        mobileList.style.backgroundColor = '#000';
+        if (screen.width < 640) {
+            mobileLink[0].style.color = '#fff';
+            mobileLink[1].style.color = '#fff';
+            mobileLink[2].style.color = '#fff';
+            mobileLink[3].style.color = '#fff';
+            mobileLink[4].style.color = '#fff';
+            mobileNav.style.backgroundColor = '#000';
+            mobileList.style.backgroundColor = '#000';
+        }
+        
         navbar.style.setProperty("--check_opacity", "0");
     }
 };
