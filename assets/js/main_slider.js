@@ -1,3 +1,5 @@
+//setting up landing page slider
+
 let a = document.getElementById("slide1");
 let b = document.getElementById("slide2");
 let c = document.getElementById("slide3");
@@ -67,6 +69,9 @@ setInterval(() => {
     index++;
 },3000);
 
+//
+
+//setting up mobile view for navigation bar
 let navbar = document.querySelector('.navigation_bar');
 let upperNav = document.querySelector('.upper_nav');
 let nav_logo = document.querySelector('.logo');
@@ -143,5 +148,5 @@ window.onscroll = () => {
     }
 }
 
-
+//
 
