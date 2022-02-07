@@ -43,6 +43,7 @@
     z-index: 1;
 }
 .chef_heading p{
+    text-align: center;
     color: #ca3d26;
     font-size: 70px;
     font-family: 'Dancing Script', cursive;

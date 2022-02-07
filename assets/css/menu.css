@@ -43,6 +43,7 @@
     z-index: 1;
 }
 .menu_heading p{
+    text-align: center;
     color: #ca3d26;
     font-size: 70px;
     font-family: 'Dancing Script', cursive;
@@ -233,6 +234,9 @@
         font-size: 30px;
     }
     .book_table_heading p{
+        width: 60%;
+    }
+    .book_table_heading a{
         width: 60%;
     }
 }

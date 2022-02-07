@@ -39,6 +39,7 @@
     margin: 0 auto;
 }
 .heading p{
+    text-align: center;
     font-size: 80px;
     font-family: 'Dancing Script', cursive;
     color: #ca3d26;

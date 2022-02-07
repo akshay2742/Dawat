@@ -72,3 +72,65 @@
 .news_data a{
     color: #000;
 }
+
+#gallery{
+    padding: 100px 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+}
+#gallery::after{
+    background: rgba(0, 0, 0, 0) url(../images/icon/triangle.png) repeat scroll 0 0;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    top: -7px;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    width: 100%;
+    z-index: 9;
+}
+#gallery::before{
+    background: rgba(0, 0, 0, 0) url(../images/icon/triangle.png) repeat scroll 0 0;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    bottom: -7px;
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    width: 100%;
+    z-index: 9;
+}
+.gallery_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.gallery_heading{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.gallery_heading p{
+    text-align: center;
+    color: #ca3d26;
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+}
+.gallery_heading div{
+    justify-content: center;
+    margin : 0 auto;
+    height: 70px;
+}
+/* @media screen and (max-width: 768px){
+    .gallery_heading p{
+        font-size: 50px;
+    }
+}
+     */
