@@ -144,16 +144,30 @@
     width: 100%;
 }
 .book_table_content{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
 }
-.book_table_content h2{
-    
+.book_table_heading{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.book_table_heading h2{
+    text-align: center;
     font-size: 50px;
     color: #fff;
     letter-spacing: 5px;
     z-index: 9;
 }
-.book_table_content a{
+
+
+.book_table_heading a{
     background: #fff none repeat scroll 0 0;
     color: #ca3d26;
     display: inline-block;
@@ -162,7 +176,16 @@
     margin-top: 20px;
     padding: 10px 20px;
     text-transform: uppercase;
-    min-width: 200px;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.book_table_heading a:hover{
+    background: #ca3d26;
+    
+    transition: .5s;
 }
 @media screen and (max-width: 768px){
     .menu_cards_filters ul li{
@@ -206,12 +229,11 @@
         flex-direction: row;
         width: 95%;
     }
-    .book_table_content h2{
-    
+    .book_table_heading h2{
         font-size: 30px;
-        color: #fff;
-        letter-spacing: 5px;
-        z-index: 9;
+    }
+    .book_table_heading p{
+        width: 60%;
     }
 }
     
