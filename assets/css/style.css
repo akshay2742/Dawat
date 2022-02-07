@@ -258,6 +258,7 @@ ul {
     display: flex;
     flex-direction: row;
     height: 100%;
+    transition: .25s;
 }
 .navbar_logo{
     margin-top: auto;

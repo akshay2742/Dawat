@@ -79,6 +79,7 @@ let mobileList = document.querySelector("#mobile_links");
 window.onscroll = () => {
     if (window.scrollY > 300) {
         navbar.style.backgroundColor = '#fff';
+        mobileNav.style.backgroundColor = '#fff';
         navbar.style.animation = 'fadeIn 1s'
         upperNav.style.display = 'none';
         nav_logo.src='./assets/images/main_logo_black.png';
@@ -105,6 +106,7 @@ window.onscroll = () => {
 
     } else {
         navbar.style.backgroundColor = 'transparent';
+        mobileNav.style.backgroundColor = 'transparent';
         upperNav.style.display = 'block';
         nav_logo.src='./assets/images/main_logo.png';
         link_color[0].style.color = '#fff';
